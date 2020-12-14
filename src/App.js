@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import './components/GraphWrapper';
+import SketchGraph from './components/GraphWrapper';
+import {Graph} from "react-d3-graph";
+import wsucougarhead from './wsu-cougarhead.png';
+
+
+const data = {
+  nodes: [{ id: "Harry" }, { id: "Sally" }, { id: "Alice" }],
+  links: [
+      { source: "Harry", target: "Sally" },
+      { source: "Harry", target: "Alice" },
+  ],
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="graphWrapper">
+        <SketchGraph 
+        id="MainContentGraph"
+         />
+         <br/>
+         <br/>
+      </div>
+      
     </div>
   );
 }
