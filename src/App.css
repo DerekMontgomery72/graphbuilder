@@ -30,9 +30,10 @@
 
 .graphWrapper{
   padding-top: 20px;
-  align-self: start;
   border: 2px solid black;
+  z-index: -1;
 }
+
 
 @keyframes App-logo-spin {
   from {

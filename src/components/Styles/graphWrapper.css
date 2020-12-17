@@ -1,0 +1,51 @@
+tr{
+  width: 100%
+}
+tr td{
+  padding:5px;
+}
+#button{
+  font-size: 20px;
+  border-radius: 15px;
+
+}
+.graphWrapper{
+    padding-top: 20px;
+    border: 2px solid black;
+  }
+  .headTableRow{
+    width:100%
+  }
+  .headTableCell{
+    width:33%;
+    text-align:center;
+  }
+  
+  .inactiveModeBtn{
+    background-color: #e8e8e8 !important;
+    color: #373b40 !important;
+    
+  }
+
+  .activeModeBtn{
+    background-color: #373b40 !important;
+    color: #e8e8e8 !important;
+
+  }
+  .infoModalContent{
+    
+    overflow: auto;
+    padding:20px;
+    width:60%;
+    margin: 20% auto;
+    background-color: #e8e8e8;
+    border: 1px solid black;
+  }
+  .infoModal{
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1000000;
+  }
